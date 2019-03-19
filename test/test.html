@@ -1,0 +1,153 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Draggable Widget</title>
+    <script>
+        window.dataLayer = [];
+    </script>
+    <script src="./test.js"></script>
+    <style>
+        body {
+            height: 2000px;
+            margin: 0;
+            width: 100vw;
+            max-width: 100vw;
+            overflow-x: hidden;
+            -webkit-overflow-x: hidden;
+        }
+
+        .full-container {
+            max-width: 100vw;
+            width: 1320px;
+            margin: 0 auto;
+            touch-action: none;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(228, 255, 196);
+            border: none;
+        }
+
+        .left-menu {
+            width: 25%;
+            display: inline-block;
+            height: 500px;
+            border: 1px solid #333;
+            background-color: rgb(0, 36, 58);
+            box-sizing: border-box;
+            float: left;
+        }
+
+        .smaller-container {
+            width: 75%;
+            display: inline-block;
+            float: left;
+            background-color: rgb(245, 224, 255);
+            box-sizing: border-box;
+        }
+
+        .vl-slider-header {
+            text-align: center;
+            font-size: 50px;
+            margin: 20px 0 20px 0;
+        }
+
+        .vl-slider-item {
+            text-align: center;
+            font-size: 150px;
+            line-height: 300px;
+            color: black;
+            text-decoration: none;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .full-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full-container">
+        <span>
+            <div class="vl-widget" id="test-widget1">
+                <div class="vl-slider-header">Test Widget 1</div>
+                <div class="vl-slider">
+                    <div class="vl-slider-wrapper">
+                        <a class="vl-slider-item" href="#1" data-id="1" data-name="1.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">1</a>
+                            <a class="vl-slider-item" href="#2" data-id="2" data-name="2.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">2</a>
+                            <a class="vl-slider-item" href="#3" data-id="3" data-name="3.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">3</a>
+                            <a class="vl-slider-item" href="#4" data-id="4" data-name="4.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">4</a>
+                            <a class="vl-slider-item" href="#5" data-id="5" data-name="5.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">5</a>
+                    </div>
+                </div>
+            </div>
+        </span>
+    </div>
+    <div class="full-container">
+        <div class="left-menu"></div>
+        <div class="smaller-container">
+            <span>
+                <div class="vl-widget" id="test-widget2">
+                    <div class="vl-slider-header">Test Widget 2</div>
+                    <div class="vl-slider">
+                        <div class="vl-slider-wrapper">
+                            <a class="vl-slider-item" href="#1" data-id="1" data-name="1.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">1</a>
+                            <a class="vl-slider-item" href="#2" data-id="2" data-name="2.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">2</a>
+                            <a class="vl-slider-item" href="#3" data-id="3" data-name="3.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">3</a>
+                            <a class="vl-slider-item" href="#4" data-id="4" data-name="4.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">4</a>
+                            <a class="vl-slider-item" href="#5" data-id="5" data-name="5.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">5</a>
+                            <a class="vl-slider-item" href="#6" data-id="6" data-name="6.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">6</a>
+                            <a class="vl-slider-item" href="#7" data-id="7" data-name="7.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">7</a>
+                            <a class="vl-slider-item" href="#8" data-id="8" data-name="8.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">8</a>
+                            <a class="vl-slider-item" href="#9" data-id="9" data-name="9.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">9</a>
+                            <a class="vl-slider-item" href="#10" data-id="10" data-name="10.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">10</a>
+                            <a class="vl-slider-item" href="#11" data-id="11" data-name="11.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">11</a>
+                            <a class="vl-slider-item" href="#12" data-id="12" data-name="12.ürün" data-price="10tl"
+                                data-brand="marka"
+                                data-link="http://www.test.com/?OM.zn=Test%20Reco-w2&OM.zpc=37314">12</a>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
